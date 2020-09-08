@@ -1,0 +1,283 @@
+
+head {
+    margin:0;
+}
+.homeHeader{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height:648px;
+    max-height:700px;
+    margin-top:-1em;
+    background-image:url(../images/headshotimgFinal.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:top;
+    z-index: -1;
+}
+
+.navbarContainer {
+    display:flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-right:0;
+    background-color: rgba(234, 233, 235, 0.5);
+    margin:0;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+}
+
+.navbar { 
+    display: contents;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    left: 63%;    
+    color: 20124D;
+}
+nav a:hover {
+    background-color:rgba(191, 170, 239, 0.9);
+}
+.navListItem {
+    color: #20124D;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none; 
+    padding: 16px;
+}
+#homeLink {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 16px;
+    color:#20124D;
+}
+
+body{
+    position: relative;
+}
+.grayNeutral{
+    color:#F1F1F1; 
+}
+.grayPurple{
+    background-color:#F7F0FA;
+}
+.grayPeach {
+    background-color:#FFF4EF;
+}
+.grayGreen {
+    background-color:#E3F1F0;
+}
+
+.homeH5{
+    position: absolute;
+    width: 414px;
+    height: 33px;
+    left: 104px;
+    top: 271px;
+}
+.homeH6{
+    position: absolute;
+    width: 375px;
+    height: 56px;
+    left: 104px;
+    top: 323px;
+}
+#PageTitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Red Hat Text', sans-serif;    
+    letter-spacing: 0.01em;
+    line-height: 140%
+}
+
+.pregular {
+    font-weight: 400;
+}
+.pbold {
+    font-weight: 500;
+}
+.mobileBody {
+    font-size: 16px;
+}
+.desktopBody {
+    font-size: 18px;
+}
+#h61{
+    font-weight: 400;
+}
+h1{
+    position: absolute;
+    width: 458px;
+    height: 217px;
+    left: 104px;
+    top: 146px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 85px;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+}
+
+h5{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+}
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;    
+    letter-spacing: 0.01em;
+}
+
+.projectContainer1 {
+    position: absolute;
+    width: 946px;
+    height: 549px;
+    left: 0px;
+    top: 752px;
+    border-radius: 0px 24px 24px 0px;
+}
+.homepicLeft-1{
+    position: absolute;
+    width: 558px;
+    height: 412px;
+    left: 64px;
+    top: 832px;
+}
+
+.homeCard{
+    width: 492px;
+    height: 349px;
+    opacity: 0.9;
+    background-color: #F8ECD4;
+    border-radius:24px;
+    color: #20124D;
+}
+.h3homeCard {
+    position: absolute;
+    left: 14.11%;
+    right: 5.77%;
+    top: 26.07%;
+    bottom: 49.28%;
+}
+.h6homeCard {
+    position: absolute;
+    left: 14.11%;
+    right: 58.28%;
+    top: 13.75%;
+    bottom: 80.23%;
+    font-weight: 700;
+}
+.phomeCard{
+    position: absolute;
+    left: 14.11%;
+    right: 12.46%;
+    top: 56.73%;
+    bottom: 30.95%;  
+}
+
+#project1{
+    position: absolute;
+    left: 735px;
+    top: 912px;
+}
+
+.projectContainer2 {
+    position: absolute;
+    width: 946px;
+    height: 549px;
+    right: -30px;
+    top: 1456px;
+    border-radius: 24px 0px 0px 24px;
+}
+.homepicRight-1 {
+    position:absolute;
+    width: 791px;
+    height: 497px;
+    left: 643px;
+    top: 1514px;
+}
+#project2{
+    position: absolute;
+    left: 212px;
+    top: 1622px;    
+}
+.projectContainer3 {
+    position: absolute;
+    width: 946px;
+    height: 549px;
+    left: 0px;
+    top: 2171px;
+    border-radius: 0px 24px 24px 0px;
+}
+
+.homepicLeft-2 {
+    position:absolute;
+    width: 558px;
+    height: 410.74px;
+    left: 64px;
+    top: 2251px;
+}
+#project3{
+    position: absolute;
+    left: 740px;
+    top: 2331px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    top: 2900px;
+    width: 100%;
+    height: 5em;
+    background-color: #F7F0FA;
+    padding:1em;
+}
+footer a{
+    text-decoration: none;
+    color: #20124D;
+}
+#social {
+    display:flex;
+    color: #363636;
+    float: right;
+}
+.socialLink{
+    padding: 0px 16px;
+}
+
+#copyright{
+    color:#363636;
+    text-align: center;
+    margin-top: 4em;
+}
