@@ -1,5 +1,5 @@
 head {
-    margin: 0;
+    margin: 0px;
 }
 body {
     margin: 0px;
@@ -9,7 +9,7 @@ body {
 .homeHeader{
     height: 648px;
     max-height: 650px;
-    background-image:url(../images/headshotimgFinal.png);
+    background-image:url(../images/headshot_Final.png);
     background-size:cover;
     background-repeat:no-repeat;
     background-position:top;
@@ -142,8 +142,6 @@ p{
 }
 h1{
     position: absolute;
-    width: 458px;
-    height: 217px;
     left: 104px;
     top: 146px;
     font-family: 'Raleway', sans-serif;
@@ -184,24 +182,26 @@ h6 {
     background-color: #F8ECD4;
     border-radius:24px;
     color: #20124D;
+    margin-right: 0px;
 }
 .h6homeCard {
     position: relative;
     left: 14.11%;
-    right: 58.28%;
     top: 10.75%;
     font-weight: 700;
+    padding-right: 20%;
 }
 .h3homeCard {
     position: relative;
     left: 14.11%;
     padding-top: 24px;
-    margin-right: 20%;
+    padding-right: 20%;
+    margin-right: 0px;
 }
 .phomeCard{
     position: relative;
     left: 14.11%; 
-    margin-right: 24%;
+    padding-right: 24%;
     padding-top: 8px;
 }
 
@@ -217,6 +217,7 @@ h6 {
     height: 549px;
     left: 0px;
     border-radius: 0px 24px 24px 0px;
+    margin-right: 0px;
 }
 .homepicLeft-1{
     position: relative;
@@ -227,7 +228,8 @@ h6 {
 }
 #project1{
     position: relative;
-    left: 70%;
+    left: 68%;
+    margin-right: 0px;
     bottom: 56%;
 }
 .projectContainer2 {
@@ -270,8 +272,9 @@ h6 {
 }
 #project3{
     position: relative;
-    left: 70%;
+    left: 68%;
     bottom: 56%;
+    margin-right: 0px;
 }
 
 /* FOOTER */
