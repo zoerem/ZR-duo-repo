@@ -292,10 +292,9 @@ h6 {
 }
 #social-li {
     width: 50px;
-    padding:1em;
-    align-self: flex-end;
     justify-content: flex-end;
     text-decoration: none;
+    padding: 1em;
 }
 #copyright{
     color:#363636;
