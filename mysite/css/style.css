@@ -277,28 +277,35 @@ h6 {
 
 /* FOOTER */
 .footer{
-    display: flex; 
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width:100vw;
-    height: 5em;
+    display: flex;
+    margin-top: 160px;
+    width:98.5vw;
+    height: 8em;
     background-color: #F7F0FA;
-    padding: 1em 0em;
-    margin: 0;
+    justify-content: flex-end;
 }
 #RHP{
     color: #20124D;
-}
-#social-li {
-    width: 50px;
-    justify-content: flex-end;
     text-decoration: none;
-    padding: 1em;
 }
-#copyright{
+
+#social-li {
+    height: 45px;
+    width: 45px;
+    background-image: url(../images/linkedin-wht.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    
+}
+.social{
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+
+}
+.copyright{
     color:#363636;
-    justify-content: center;
-    padding: 1em;
+    padding: 2em 25% 2em 0em;
+    flex-wrap: nowrap;
 }
 
