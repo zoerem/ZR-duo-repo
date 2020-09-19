@@ -20,7 +20,8 @@ a:focus {
   .big-screen{
       /* background-color: rgba(191, 170, 239, 0.3);*/
       background-color: rgba(248, 236, 212, 0.5);
-      padding-top: 80px;
+      /* padding-top: 80px; */
+      padding-bottom: 0px;
   }  
   .projects{
       background-color: white;
