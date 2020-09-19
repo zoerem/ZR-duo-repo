@@ -21,7 +21,6 @@ a:focus {
       /* background-color: rgba(191, 170, 239, 0.3);*/
       background-color: rgba(248, 236, 212, 0.5);
       /* padding-top: 80px; */
-      padding-bottom: 0px;
   }  
   .projects{
       background-color: white;
@@ -357,7 +356,7 @@ nav a:hover {
 .footer{
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 160px;
+    /* margin-top: 160px; */
     margin-bottom: 0px;
     width: 100vw;
     background-color: #F7F0FA;
