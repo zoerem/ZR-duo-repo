@@ -16,14 +16,13 @@ a:focus {
 }
 
 /* MEDIA QUERIES ----------------------------------*/
-@media screen and (min-width:1500px) {
+@media screen and (min-width:1800px) {
   .big-screen{
-      /* background-color: rgba(191, 170, 239, 0.3);*/
-      background-color: rgba(248, 236, 212, 0.5);
-      /* padding-top: 80px; */
+      background-color: rgba(248, 236, 212, 0.25);
   }  
   .projects{
       background-color: white;
+      padding-top: 3% !important; 
   }
 }
 
@@ -205,15 +204,17 @@ h6 {
 .marg-top-3{
     margin-top:64px;
 }
-
+.marg-top-5{
+    margin-top:16px;
+}
 /* NAVBAR ---------------------------------------- */
 .homeHeader{
     height: 648px;
-    /* max-height: 650px; */
+    max-height: 650px;
     background-image:url(../images/headshot_LG.jpg);
     background-size: cover;
     background-repeat:no-repeat;
-    /* background-position: 20% center; */
+    background-position: 20% center;
     width: 100vw;
     z-index: -1;
 }
@@ -272,9 +273,10 @@ nav a:hover {
 .projects{
     display: flex;
     flex-direction: column;
-    padding: 160px 0px;
-    max-width: 1500px;
+    padding: 8% 0px;
+    max-width: 1800px;
     margin: 0 auto;
+    transition: padding 1.5s ease-in-out;
 }
 .homeCard{
     max-width: 490px;
@@ -319,9 +321,9 @@ nav a:hover {
 
 }
 #project-LF{
-    position: relative;
-    left: 72%;
-    bottom: 48%;
+    position: absolute;
+    bottom: 10%;
+    right: -40%;
 }
 .projectContainer-RT {
     position: relative;
@@ -340,9 +342,9 @@ nav a:hover {
     width: 560px;
 }
 #project-RT{
-    position: relative;
-    right: 40%;
-    bottom: 48%;    
+    position: absolute;
+    bottom: 10%; 
+    left: -40%   
 }
 .homepicLeft {
     position: relative;
@@ -351,6 +353,41 @@ nav a:hover {
     left: 0;
     top: 80px;
 }
+
+.arrows-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{
+    height: 100%;
+    width: auto;
+}
+.center-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.center-row h2{
+    padding: 0px 1em;
+}
+
+/* #arrow-top{
+    animation: bounceTop .7s infinite;
+}
+
+#arrow-left{
+    animation: bounceLeft .7s infinite;
+}
+@keyframes bounceTop{
+    from{
+        padding-block-start:0;
+    }
+    to{
+        padding-block-start:1%;
+    }
+} */
 
 /* FOOTER ---------------------------------------- */
 .footer{
