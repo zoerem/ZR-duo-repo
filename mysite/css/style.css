@@ -15,19 +15,6 @@ a:focus {
     outline-color:rgba(191, 170, 239, 1);
 }
 
-/* MEDIA QUERIES ----------------------------------*/
-@media screen and (min-width:1800px) {
-  .big-screen{
-      background-color: rgba(248, 236, 212, 0.25);
-  }  
-  .projects{
-      background-color: white;
-      padding-top: 3% !important; 
-  }
-}
-
-
-
 /* BUTTONS ---------------------------------------- */
 .buttonLT:hover{
     background-color: rgba(191, 170, 239);
@@ -48,11 +35,7 @@ a:focus {
     font-weight: 600;
     transition-duration:0.3s;
 }
-#buttonHero{
-    position:absolute;
-    left: 104px;
-    top: 443px;
-}
+
 
 /* COLORS ---------------------------------------- */
 .grayNeutral{
@@ -84,26 +67,7 @@ a:focus {
 }
 
 /* TYPOGRAPHY ---------------------------------------- */
-.homeH1{
-    position: absolute;
-    top: 146px;
-    left: 104px;
-}
-.homeH4 {
-    position: absolute;
-    width: 414px;
-    height: 33px;
-    left: 104px;
-    top: 271px;
-}
 
-.homeH6{
-    position: absolute;
-    width: 375px;
-    height: 56px;
-    left: 104px;
-    top: 323px;
-}
 #PageTitle {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -207,7 +171,7 @@ h6 {
 .marg-top-5{
     margin-top:16px;
 }
-/* NAVBAR ---------------------------------------- */
+/* NAVBAR  + HOME HERO----------------------------- */
 .homeHeader{
     height: 648px;
     max-height: 650px;
@@ -217,6 +181,26 @@ h6 {
     background-position: 20% center;
     width: 100vw;
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+.homeH1 {
+    padding: 8% 7% 1%;
+    margin: 0;
+}
+.homeH4 {
+    padding: 1% 7%;
+    margin: 0;
+}
+.homeH6 {
+    padding-left: 7%;
+    width: 24%;
+    margin: 0;
+}
+#buttonHero{
+    position:relative;
+    margin: 2% 0 0 7%;
+    width: 180px;
 }
 
 .navbarContainer {
@@ -314,11 +298,9 @@ nav a:hover {
 }
 .homepicLeft{
     position: relative;
-    width: 558px;
+    width: 550px;
     height: auto;
-    left: 0;
-    top: 80px;
-
+    margin-top: 2.5em;
 }
 #project-LF{
     position: absolute;
@@ -338,20 +320,13 @@ nav a:hover {
     margin-left: 16%;
     position: relative;
     top: 80px;
-    right: 0px;
+    right: 0px; 
     width: 560px;
 }
 #project-RT{
     position: absolute;
     bottom: 10%; 
     left: -40%   
-}
-.homepicLeft {
-    position: relative;
-    width: 558px;
-    height: auto;
-    left: 0;
-    top: 80px;
 }
 
 .arrows-container{
@@ -586,3 +561,189 @@ nav a:hover {
 .contact-section h3{
     margin-bottom: 0;
 }
+
+/* MEDIA QUERIES ----------------------------------*/
+@media screen and (min-width:1800px) {
+    .big-screen{
+        background-color: rgba(248, 236, 212, 0.25);
+    }  
+    .projects{
+        background-color: white;
+        padding-top: 3% !important; 
+    }
+  }
+@media screen and (max-width:1023px) {  
+/* MOBILE STYLE */
+
+/* MOBILE TYPOGRAPHY */
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 110%;
+    max-width: 300px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 36px;
+}
+h3{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+h4{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 20px;
+}
+h6{
+    font-size: 18px;
+    font-weight: 600;
+}
+p{
+    font-size: 16px;
+}
+
+/* MOBILE NAV   ---------------------- */
+
+.navbarContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding-top: 0.5em;
+    background-color: rgba(234, 233, 235, 0.5);
+    margin:0;
+    width: 100vw;
+    z-index: 999;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    color: #20124D;
+    margin: 0 0 0.5em 0;
+    padding: 0.5em 0;
+    width: 90vw;
+    justify-content: space-between;
+}
+.navListItem {
+    color: #20124D;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none; 
+    padding: 0.5em;
+    margin: 0;
+    transition-duration: 0.2s;
+}
+nav a:hover {
+    background-color:rgba(191, 170, 239, 0.9);
+}
+
+#homeLink {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0;
+    color:#20124D;
+    transition-duration: 0.2s;
+}
+#homeLink:hover {
+    background-color:rgba(191, 170, 239, 0.9);
+}
+
+/* MOBILE HOMEPAGE------- */
+.homeHeader{
+    height: 520px;
+    max-height: 560px;
+    background-image:url(../images/headshot_LG.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: top center;
+    width: 100vw;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeH4 {
+    width: 80%;
+}
+.homeH6 {
+    width: 80%;
+    padding-top: 0.5em;
+}
+
+.homeH1 {
+    padding-top: 32%; 
+}
+#buttonHero {
+    margin-left: 40%;
+    margin-top: 0.5em;
+}
+.projectContainer-LF{
+    width: 90%;
+    margin-top: 4%;
+}
+.projectContainer-RT{
+    width: 90%;
+    margin-top: 4%;
+}
+.projectContainer-LF img, .projectContainer-RT img{
+    width: 100%;
+}
+.homeCard{
+    margin-left: 8%;
+    padding:0px 0 1em 1.5em;
+}
+#project-LF{
+    bottom:-18%;
+    right:-11%;
+}
+#project-RT{
+    bottom:-18%;
+    margin-right:8%;
+    left:-19%;
+}
+.homepicRight{
+    right: 20%;
+}
+.h6homeCard{
+    margin:1.5em 0px;
+    padding:0;
+    width: 90%;
+}
+.h3homeCard{
+    padding: 0px;
+    margin: 0px;
+    width: 96%;
+}
+.phomeCard{
+    width: 94%;
+}
+.center-row h2{
+    font-size: 18px;
+    padding: 0 0.5em;
+}
+
+
+
+} /* end of mobile media query */
