@@ -163,7 +163,7 @@ h6 {
     margin-top:104px;
 }
 .marg-top-2{
-    margin-top:80px;
+    margin-top: 6%;
 }
 .marg-top-3{
     margin-top:64px;
@@ -368,7 +368,7 @@ nav a:hover {
 .footer{
     display: flex;
     flex-direction: column-reverse;
-    /* margin-top: 160px; */
+    margin-top: 7%;
     margin-bottom: 0px;
     width: 100vw;
     background-color: #F7F0FA;
@@ -377,7 +377,8 @@ nav a:hover {
 }
 .copyright{
     display: flex;
-    padding: 0;
+    padding: 0 1em;
+    text-align: center;
     color:#363636;
 }
 
@@ -443,6 +444,8 @@ nav a:hover {
 .work-card img {
     margin-top: 48px;
     justify-self: center;
+    height: auto;
+    width: 100%;
 }
 
 /* ABOUT PAGE ----------------------------------------*/
@@ -572,7 +575,7 @@ nav a:hover {
         padding-top: 3% !important; 
     }
   }
-@media screen and (max-width:1023px) {  
+@media screen and (max-width: 1024px) {  
 /* MOBILE STYLE */
 
 /* MOBILE TYPOGRAPHY */
@@ -610,6 +613,7 @@ p{
     font-size: 16px;
 }
 
+
 /* MOBILE NAV   ---------------------- */
 
 .navbarContainer{
@@ -627,10 +631,6 @@ p{
     z-index: 999;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-}
 nav ul {
     list-style-type: none;
     display: flex;
@@ -672,17 +672,30 @@ nav a:hover {
 
 /* MOBILE HOMEPAGE------- */
 .homeHeader{
-    height: 520px;
-    max-height: 560px;
+    height: 627px;
     background-image:url(../images/headshot_LG.jpg);
     background-size: cover;
     background-repeat:no-repeat;
-    background-position: top center;
+    background-position: center;
     width: 100vw;
     z-index: -1;
     display: flex;
     flex-direction: column;
 }
+/* --failed attempt to fix mobile hero image--
+ .mobile-img{
+    background-image:url(../images/headshot_LG.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 280px;
+    width: 100vw;
+    border: none;
+}
+.no-border{
+    border: none;
+    display:contents;
+} */
 
 .homeH4 {
     width: 80%;
@@ -699,6 +712,9 @@ nav a:hover {
     margin-left: 40%;
     margin-top: 0.5em;
 }
+.projects{
+    padding-top:12%;
+}
 .projectContainer-LF{
     width: 90%;
     margin-top: 4%;
@@ -708,7 +724,7 @@ nav a:hover {
     margin-top: 4%;
 }
 .projectContainer-LF img, .projectContainer-RT img{
-    width: 100%;
+    width: 80%;
 }
 .homeCard{
     margin-left: 8%;
@@ -742,8 +758,56 @@ nav a:hover {
 .center-row h2{
     font-size: 18px;
     padding: 0 0.5em;
+    text-align: center;
+}
+.arrows-container{
+    margin-top: 7%;
+    padding: 4%;
+}
+.footer{
+    margin-top: 14%;
 }
 
+/* MOBILE ABOUT */
+.about-h1{
+    max-width:60%;
+}
+.page-intro{
+    flex-direction: column-reverse; 
+}
+.page-intro-LF{
+    width: 86%;
+    margin: 7%;
+}
+.about-h3{
+    margin-left:10%;
+}
+.process-card{
+    min-width: 86%;
+}
+.polaroid-cards{
+    flex-direction: column;
+    margin-left: 22%;
+    width: 64vw;
+}
+.mobile-pad-left{
+    padding-left:60%;
+}
+.mobile-pad-left h3{
+    padding-top: 8%;
+}
+.mobile-pad-left p{
+    margin-bottom: 2em;
+    margin-right: 10%;
+}
 
+/* MOBILE WORK */
+
+.work-h1{
+    left: 7%;
+}
+.work-card{
+    min-width: 86%;
+}
 
 } /* end of mobile media query */
