@@ -36,7 +36,6 @@ a:focus {
     transition-duration:0.3s;
 }
 
-
 /* COLORS ---------------------------------------- */
 .grayNeutral{
     color:#F1F1F1; 
@@ -234,8 +233,11 @@ nav ul {
     margin-right: 1em;
     transition-duration: 0.2s;
 }
-nav a:hover {
+.navListItem:hover {
     background-color:rgba(191, 170, 239, 0.9);
+}
+.navListItem.active {
+    border-bottom: 4px solid rgba(191, 170, 239); 
 }
 
 #homeLink {
@@ -252,6 +254,7 @@ nav a:hover {
 #homeLink:hover {
     background-color:rgba(191, 170, 239, 0.9);
 }
+
 
 /* HOME SECTION COMPONENTS ---------------------------------------- */
 .projects{
@@ -673,45 +676,27 @@ nav a:hover {
 /* MOBILE HOMEPAGE------- */
 .homeHeader{
     height: 627px;
-    background-image:url(../images/headshot_LG.jpg);
+    background-image:url(../images/headshot_MOB.jpg);
     background-size: cover;
     background-repeat:no-repeat;
-    background-position: center;
+    background-position: right 30% bottom 100%;
     width: 100vw;
     z-index: -1;
     display: flex;
     flex-direction: column;
 }
-/* --failed attempt to fix mobile hero image--
- .mobile-img{
-    background-image:url(../images/headshot_LG.jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center;
-    height: 280px;
-    width: 100vw;
-    border: none;
-}
-.no-border{
-    border: none;
-    display:contents;
-} */
 
+.homeH1 {
+    padding-top: 2.5em; 
+}
 .homeH4 {
     width: 80%;
 }
 .homeH6 {
-    width: 80%;
+    width: 16em;
     padding-top: 0.5em;
 }
 
-.homeH1 {
-    padding-top: 32%; 
-}
-#buttonHero {
-    margin-left: 40%;
-    margin-top: 0.5em;
-}
 .projects{
     padding-top:12%;
 }
