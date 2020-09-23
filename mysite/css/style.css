@@ -351,21 +351,64 @@ nav ul {
     padding: 0px 1em;
 }
 
-/* #arrow-top{
-    animation: bounceTop .7s infinite;
+#arrow-top{
+    animation: bounceArrowTop 2s infinite;
+}
+#arrow-bottom{
+  animation: bounceArrowBtm 2s infinite;
+}
+#arrow-left{
+  animation: bounceArrowLF 2s infinite;
+}
+#arrow-right{
+  animation: bounceArrowRT 2s infinite;
 }
 
-#arrow-left{
-    animation: bounceLeft .7s infinite;
+@keyframes bounceArrowTop {
+  from{
+      transform: translateY(0em);
+  }
+  50% {
+      transform: translateY(-3em);
+  }
+  to{
+      transform: translateY(0em);
+  }
 }
-@keyframes bounceTop{
-    from{
-        padding-block-start:0;
-    }
-    to{
-        padding-block-start:1%;
-    }
-} */
+@keyframes bounceArrowBtm {
+  from{
+      transform: translateY(0em);
+  }
+  50% {
+      transform: translateY(3em);
+  }
+  to{
+      transform: translateY(0em);
+  }
+}
+@keyframes bounceArrowRT {
+  from{
+      transform: translateX(0em);
+  }
+  50% {
+      transform: translateX(3em);
+  }
+  to{
+      transform: translateY(0em);
+  }
+}
+@keyframes bounceArrowLF {
+  from{
+      transform: translateX(0em);
+  }
+  50% {
+      transform: translateX(-3em);
+  }
+  to{
+      transform: translateY(0em);
+  }
+}
+
 
 /* FOOTER ---------------------------------------- */
 .footer{
