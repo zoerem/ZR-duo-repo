@@ -74,7 +74,7 @@ a:focus {
     font-weight: 700;
 }
 
-p{
+p, ul{
     font-family: 'Red Hat Text', sans-serif;    
     letter-spacing: 0.01em;
     line-height: 140%;
@@ -141,35 +141,53 @@ h6 {
 /* PADDING + MARGINS ---------------------------------------- */
 
 .pad-top-1{
-    padding-top: 104px;
+    padding-top: 6.5em;
 }
 .pad-top-2{
-    padding-top: 80px;
+    padding-top: 5em;
 }
 .pad-top-3{
-    padding-top: 64px;
+    padding-top: 4em;
+}
+.pad-top-3-5{
+    padding-top: 3.5em;
 }
 .pad-top-4{
-    padding-top: 40px;
+    padding-top: 2.5em;
 }
 .pad-top-5{
-    padding-top: 24px;
+    padding-top: 1.5em;
 }
 .pad-top-6{
-    padding-top: 16px;
+    padding-top: 1em;
 }
 
 .marg-top-1{
-    margin-top:104px;
+    margin-top:6.5em;
 }
 .marg-top-2{
-    margin-top: 6%;
+    margin-top: 5em;
 }
 .marg-top-3{
-    margin-top:64px;
+    margin-top:4em;
+}
+.marg-top-4{
+    margin-top:2.5em;
 }
 .marg-top-5{
-    margin-top:16px;
+    margin-top:1em;
+}
+.section-marg-side{
+    margin: 0px 7%;
+}
+.text-wrap{
+    max-width: 500px;
+}
+.marg-btm-none{
+    margin-bottom: 0;
+}
+.marg-btm-3{
+    margin-bottom: 3.5em;
 }
 /* NAVBAR  + HOME HERO----------------------------- */
 .homeHeader{
@@ -659,6 +677,120 @@ nav ul {
     margin-bottom: 0;
 }
 
+/* FSC CASE STUDY PAGE */
+.cs-intro{
+    padding-top: 6em;
+}
+.cs-intro h5{
+    margin:0;
+}
+.cs-intro p{
+    margin-top: 0.5em;
+}
+.cs-hero{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+.line-height{
+    line-height: 160%;
+}
+.problem-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4% 7%;
+    justify-content: space-between;
+}
+.section-right{
+    margin: 2em 0em 0em;
+}
+.current-site{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+.rwd-images{
+    width: 50%;
+}
+.rwd-ipad {
+    width: auto;
+    height: 100%;
+    max-height: 175px;
+}
+.rwd-dsk {
+    width: auto;
+    height: 100%;
+    max-height: 150px;
+}
+.rwd-mob{
+    width: auto;
+    height: 100%;
+    max-height: 330px;
+}
+.research-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.interview-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+    padding: 0em 0.5em;
+    max-width: 350px; 
+}
+.interview-img{
+    width: 100%;
+    height: auto;
+}
+.interview-cards p{
+    padding: 0.5em 1em;
+}
+.quotes{
+    padding-top: 1.5em;
+    max-width: 40px;
+}
+#donor, #help-seeker, #survey {
+    align-self: flex-start;
+}
+#survey-p{
+    padding: 0.5em 2.5em;
+}
+.fsc-nav-labels{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fsc-nav-label{
+    background-color: #F7F0FA;
+    border-radius: 12px;
+    color: #20124D;
+    padding: 1em 2em;
+    min-width: 80px;
+    text-align: center;
+}
+#sitemap-results{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    margin: 0;
+    color: #20124d;
+}
+#sitemap-results1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    margin: 0;
+    color: #20124d;
+}
+.center-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* MEDIA QUERIES ----------------------------------*/
 @media screen and (min-width:1800px) {
     .big-screen{
@@ -669,6 +801,14 @@ nav ul {
         padding-top: 3% !important; 
     }
   }
+ @media screen and (min-width: 800px){
+     .rwd-images{
+         margin-top: -14em;
+     }
+     .section-right{
+         width: 32%;
+     }
+ } 
 @media screen and (max-width: 1024px) {  
 /* MOBILE STYLE */
 
@@ -885,4 +1025,21 @@ nav a:hover, .navListItem:hover, #homeLink:hover {
     min-width: 86%;
 }
 
+/* FSC CASE STUDY PAGE */
+.problem-section ul{
+    font-size: 16px;
+    padding-left: 1.25em;
+
+}
+.rwd-dsk{
+    float: right;
+}
+.rwd-images{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.center-box p{
+    padding-left:4%;
+}
 } /* end of mobile media query */
