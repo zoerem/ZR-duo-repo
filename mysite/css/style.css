@@ -87,6 +87,7 @@ p, ul{
 .pbold {
     font-weight: 500;
 }
+
 .mobileBody {
     font-size: 16px;
 }
@@ -790,6 +791,21 @@ nav ul {
     justify-content: center;
     align-items: center;
 }
+.sketch-img{
+    background-image: url("../images/FSC-pics/FSCsketches.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 667px;
+    max-height: 667px;
+    margin: 4%;
+}
+.p-highlight{
+    color: #20124d !important;
+}
+.sketch-p{
+    max-width: 656px;
+}
 
 /* MEDIA QUERIES ----------------------------------*/
 @media screen and (min-width:1800px) {
@@ -1042,4 +1058,15 @@ nav a:hover, .navListItem:hover, #homeLink:hover {
 .center-box p{
     padding-left:4%;
 }
+
+.sketch-img{
+    max-height: 500px;
+    background-position: left 78% top 10%;
+    margin: 0;
+}
+
+
+
+
+
 } /* end of mobile media query */
