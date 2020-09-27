@@ -3,7 +3,7 @@ header {
 }
 body {
     margin: 0px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100vw;
     overflow-x: hidden;
 }
@@ -87,9 +87,15 @@ p, ul{
 .pbold {
     font-weight: 500;
 }
-
+.p-highlight{
+    color: #20124d !important;
+}
 .mobileBody {
     font-size: 16px;
+}
+
+.pbig{
+    font-size:20px;
 }
 
 #h6-1{
@@ -129,7 +135,11 @@ h5{
     font-weight: 600;
     font-size: 24px;
 }
-
+.h5{
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.15%;
+}
 h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -137,6 +147,9 @@ h6 {
     line-height: 140%;    
     letter-spacing: 0.01em;
     color: #20124d;
+}
+.thin{
+    font-weight:300;
 }
 
 /* PADDING + MARGINS ---------------------------------------- */
@@ -161,6 +174,10 @@ h6 {
 }
 .pad-top-6{
     padding-top: 1em;
+}
+
+.pad-left{
+    padding-left: 1em;
 }
 
 .marg-top-1{
@@ -703,7 +720,7 @@ nav ul {
     justify-content: space-between;
 }
 .section-right{
-    margin: 2em 0em 0em;
+    margin: 3em 0em 0em;
 }
 .current-site{
     width: 100%;
@@ -711,22 +728,31 @@ nav ul {
     max-width: 500px;
 }
 .rwd-images{
-    width: 50%;
+    width: 64%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }
 .rwd-ipad {
-    width: auto;
-    height: 100%;
-    max-height: 175px;
+    /* width: auto;
+    height: 100%; */
+    max-height: 225px;
+    align-self: flex-end;
+    padding-top: 3em;
+    padding-right: 4.5em;
 }
 .rwd-dsk {
-    width: auto;
-    height: 100%;
-    max-height: 150px;
+    /* width: auto;
+    height: 100%; */
+    padding-left: 1em;
+    max-height: 175px;
 }
 .rwd-mob{
-    width: auto;
-    height: 100%;
-    max-height: 330px;
+    /* width: auto;
+    height: 100%; */
+    max-height: 400px;
+    
 }
 .research-section{
     display: flex;
@@ -791,21 +817,121 @@ nav ul {
     justify-content: center;
     align-items: center;
 }
-.sketch-img{
-    background-image: url("../images/FSC-pics/FSCsketches.png");
+.FSC-sketch{
+    /* background-image: url("../images/FSC-pics/FSCsketches.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right 35% bottom; */
     width: auto;
     height: 667px;
     max-height: 667px;
-    margin: 4%;
+    display: flex;
+    justify-content: center;
 }
-.p-highlight{
-    color: #20124d !important;
-}
+
 .sketch-p{
     max-width: 656px;
 }
+.FSC-lofi-img {
+    background-image: url("../images/FSC-pics/FSC-lofi-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 500px;
+    max-height: 500px;
+}
+
+.test-results{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.test-result-left, .test-result-right{
+    display: flex;
+    max-width: 415px;
+    align-items: center;
+}
+.test-result-p{
+    flex-direction: column;
+    padding-left:2.5em;
+}
+#FSC-hifi-desk{
+    width:100%;
+    height: auto;
+}
+.test-results-2{
+    display: flex;
+    padding: 2em 3em;
+}
+.problem-title, .solution-title{
+    display: flex;
+}
+.problem-title img, .solution-title img{
+    width: auto;
+    height: 64px;
+}
+.FSC-arrows{
+    align-self: flex-end;
+    padding: 2.5em 3em;
+}
+
+.problem-box{
+    padding-right: 3em;
+}
+.solution-box{
+    padding-left: 3em;
+}
+.before-after-pics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.before-pic, .after-pic {
+    flex-direction: column;  
+    padding-bottom: 2em;  
+}
+.before-pic img, .after-pic img{
+    width: 100%;
+    height: auto;
+}
+.hifi-left-side{
+    flex-direction: column;
+    margin-top: 3em;
+}
+.flex{
+    display: flex;
+}
+.hifi-mob-box{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 12% 0 7%; 
+}
+.scale-down{
+    transform:scale(0.7);
+    max-height: 80px;
+    margin-right: -3em;
+}
+.hifi-right-side{
+    border-radius:20px;
+}
+.mobile-hifi-butt{
+    display:none;
+}
+.results-img{
+    width:100%;
+    height:auto;
+    max-width:500px;
+}
+.conclusion-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.conclusion-box{
+    max-width: 500px;
+}
+
+
 
 /* MEDIA QUERIES ----------------------------------*/
 @media screen and (min-width:1800px) {
@@ -817,15 +943,15 @@ nav ul {
         padding-top: 3% !important; 
     }
   }
- @media screen and (min-width: 800px){
+ @media screen and (min-width: 900px){
      .rwd-images{
-         margin-top: -14em;
+         margin-top: -7em;
      }
      .section-right{
          width: 32%;
      }
  } 
-@media screen and (max-width: 1024px) {  
+@media screen and (max-width: 1023px) {  
 /* MOBILE STYLE */
 
 /* MOBILE TYPOGRAPHY */
@@ -1054,15 +1180,55 @@ nav a:hover, .navListItem:hover, #homeLink:hover {
     width: 100%;
     height: auto;
     overflow: hidden;
+    display: block;
 }
 .center-box p{
     padding-left:4%;
 }
 
-.sketch-img{
-    max-height: 500px;
-    background-position: left 78% top 10%;
-    margin: 0;
+.FSC-sketch{
+        background-image: url("../images/FSC-pics/FSCsketches.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right 35% bottom;
+        width: auto;
+        height: 500px;
+        max-height: 667px;
+}
+.FSC-sketch-img{
+    display:none;
+}
+
+.FSC-lofi-img{
+    height:310px;
+}
+#FSC-hifi-desk{
+    transform: scale(2);
+    padding: 8em 0;
+}
+.FSC-hifi{
+    width: 100vw;
+    overflow: hidden;
+}
+.hifi-mob-box{
+    display:none;
+}
+.mobile-hifi-butt{
+    display:contents;
+}
+.marg-side-top{
+    margin: 7%;
+}
+.test-results-2{
+    flex-direction: column;
+    padding: 0 7%;
+}
+.solution-box{
+    padding:0;
+}
+.FSC-arrows{
+    transform: rotate(90deg); 
+    align-self: center;
 }
 
 
