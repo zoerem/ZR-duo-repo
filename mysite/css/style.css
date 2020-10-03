@@ -60,7 +60,7 @@ a:focus {
     color: #20124d;
 }
 .greenDark {
-    color:#296B68;
+    color:#134D4A;
 }
 .peachDark{
     color: #4D1227;
@@ -150,6 +150,9 @@ h6 {
 }
 .thin{
     font-weight:300;
+}
+.norm{
+    font-weight: 400;
 }
 
 /* PADDING + MARGINS ---------------------------------------- */
@@ -708,7 +711,7 @@ nav ul {
 .cs-hero{
     width: 100%;
     height: auto;
-    max-width: 500px;
+    max-width: 600px;
 }
 .line-height{
     line-height: 160%;
@@ -802,14 +805,12 @@ nav ul {
     font-weight: 400;
     font-size: 4em;
     margin: 0;
-    color: #20124d;
 }
 #sitemap-results1{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 1.25em;
     margin: 0;
-    color: #20124d;
 }
 .center-box{
     display: flex;
@@ -818,10 +819,6 @@ nav ul {
     align-items: center;
 }
 .FSC-sketch{
-    /* background-image: url("../images/FSC-pics/FSCsketches.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right 35% bottom; */
     width: auto;
     height: 667px;
     max-height: 667px;
@@ -931,7 +928,130 @@ nav ul {
     max-width: 500px;
 }
 
+.the-end{
+    text-align: center;
+}
 
+/* USARC CASE STUDY PAGE */
+.h-green h1, .h-green h2, .h-green h3, .h-green h4, .h-green h5, .h-green h6{
+    color: #134D4A;
+}
+
+.usarc-rwd-images{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.usarc-rwd1{
+    max-height: 400px;
+}
+.usarc-rwd2{
+    max-height: 300px;
+    padding: 2.5em 1.5em 0px;
+}
+.usarc-rwd3{
+    max-height: 150px;
+}
+
+#proto-persona{
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    height: auto;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 2; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+ 
+  /* Modal Content (Image) */
+  .proto-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+ #usarc-research-img{
+     max-height: 250px;
+     width: auto;
+     height: 90%;
+ }
+.card-sorting-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-sorting-section img{
+    width: auto;
+    height: 100%;
+    max-height: 360px;
+}
+.lofi-usarc{
+    display: flex;
+    justify-content: center;
+}
+.lofi-usarc img{
+    height: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+.ab-tests{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 7%;
+}
+.lofi-headers{
+    width: 100%;
+    height: auto;
+    max-width: 375px;
+}
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#ab-results{
+    margin-top: 1em;
+    margin-right: 2em;
+}
 
 /* MEDIA QUERIES ----------------------------------*/
 @media screen and (min-width:1800px) {
@@ -1232,7 +1352,34 @@ nav a:hover, .navListItem:hover, #homeLink:hover {
 }
 
 
-
+/* USARC MOBILE */
+.usarc-rwd-images{
+    align-items: flex-end;
+    overflow: hidden;
+}
+.usarc-rwd2{
+    padding-left: 0;
+    padding-right: 0;
+}
+.proto-content {
+    width: 100%;
+  }
+.card-sorting-section img{
+    width: 100%;
+    height: auto;
+}
+#USARC-sketch{
+    background-image: url("../images/usarc/nav-sketches.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 72% bottom;
+    width: auto;
+    height: 500px;
+    max-height: 667px;
+}
+#USARC-sketch-img{
+display:none;
+}
 
 
 } /* end of mobile media query */

@@ -28,8 +28,30 @@ $(document).ready(function(){
     $window.on('scroll resize', check_if_in_view);
     $window.trigger('scroll');
     
-    
+    // Proto Persona modal
+    var modal = document.getElementById("myModal");
 
+    // Get the image and insert it inside the modal 
+    var popup = document.getElementById("proto-persona");
+    var modalImg = document.getElementById("img01");
+    popup.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = "../images/USARC/USARC-proto-persona.png";
+    
+      console.log('working?');
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    // When the user clicks anywhere else, close the modal. 
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";}}
 
 
 // below is closing for document-ready function
