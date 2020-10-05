@@ -204,6 +204,9 @@ h6 {
 .text-wrap{
     max-width: 500px;
 }
+.text-wrap-600{
+    max-width: 600px;
+}
 .marg-btm-none{
     margin-bottom: 0;
 }
@@ -918,6 +921,7 @@ nav ul {
     width:100%;
     height:auto;
     max-width:500px;
+    margin-left: 16%;
 }
 .conclusion-boxes{
     display: flex;
@@ -1049,9 +1053,54 @@ nav ul {
     justify-content: space-between;
 }
 #ab-results{
-    margin-top: 1em;
-    margin-right: 2em;
+    margin: 1em 2em 0 0;
 }
+.usarc-tagline{
+    padding-top: 2em;
+    text-align: center;
+}
+.usarc-tagline p{
+    font-size: 1.85em;
+}
+.wrap-40{
+    width: 40%;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+}
+#fivesec{
+    max-width:380px;
+    padding: 1em 0.5em;
+}
+.text-center{
+    text-align: center;
+}
+#lofi-usarc2{
+    max-width:600px;
+}
+#USARC-hifi-desk{
+    width: 100%;
+    height: auto;
+}
+#usarc-test-p{
+    padding-top: 1em;
+}
+#usarc-test2{
+    flex-direction: column;
+    padding: 7% 7% 4% 0;
+    max-width: 500px;
+    align-self: baseline;
+}
+.hifi-iterations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4% 7%;
+}
+
+
 
 /* MEDIA QUERIES ----------------------------------*/
 @media screen and (min-width:1800px) {
@@ -1350,7 +1399,9 @@ nav a:hover, .navListItem:hover, #homeLink:hover {
     transform: rotate(90deg); 
     align-self: center;
 }
-
+.results-img{
+    margin-left: 0;
+}
 
 /* USARC MOBILE */
 .usarc-rwd-images{
@@ -1379,6 +1430,9 @@ nav a:hover, .navListItem:hover, #homeLink:hover {
 }
 #USARC-sketch-img{
 display:none;
+}
+.flex-column{
+    width:100%;
 }
 
 
