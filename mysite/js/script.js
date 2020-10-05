@@ -54,5 +54,8 @@ $(document).ready(function(){
         modal.style.display = "none";}}
 
 
+$ease: cubic-bezier(.2,1,.3,1);
+
+
 // below is closing for document-ready function
 });

@@ -332,6 +332,67 @@ nav ul {
 }
 
 
+.case-CTA {
+  display: flex;
+  align-items: flex-start;
+  height:1.75em;
+}
+.case-CTA h6{
+    margin:0;
+}
+svg {
+        width: 100px;
+        height: auto;
+        margin: 0.75em 2rem;
+        cursor: pointer;
+        overflow: visible;
+        fill: #20124d;
+        transform: translate(-50%, -50%) scale(0.25);
+}  
+polygon, path {
+    transition: all 0.5s ease;
+}
+svg:hover polygon, svg:hover path {
+    transition: all 1s ease;
+    fill: ##20124d;
+}
+          
+svg:hover .arrow {
+    animation: arrow-anim 2.5s ease infinite;
+    fill: #BFAAEF;
+}
+svg:hover .arrow-fixed {
+    animation: arrow-fixed-anim 2.5s ease infinite;
+}
+
+@keyframes arrow-anim {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	5% {
+		transform: translateX(-0.1rem);
+	}
+	100% {
+		transform: translateX(1rem);
+		opacity: 0;
+	}
+}
+
+@keyframes arrow-fixed-anim {
+	5% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
 /* HOME SECTION PROJECTS 1-3 ----------------------------------------*/
 .projectContainer-LF {
     position: relative;
