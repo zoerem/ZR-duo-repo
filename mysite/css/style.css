@@ -354,7 +354,7 @@ polygon, path {
 }
 svg:hover polygon, svg:hover path {
     transition: all 1s ease;
-    fill: ##20124d;
+    fill: #20124d;
 }
           
 svg:hover .arrow {
