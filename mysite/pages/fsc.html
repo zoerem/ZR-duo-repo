@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet" type="text/css"> 
         <link href="../images/zr-trans.png" rel="icon" type="image/png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="../js/script.js"> </script>  
         <!-- Hotjar Tracking Code for https://zoerem.github.io/ZR-repo/mysite/zoerem.htm -->
         <script>
             (function(h,o,t,j,a,r){
@@ -95,12 +97,21 @@
                 <h3 class="pad-top-2">
                     research.
                 </h3>
-                <p class="text-wrap">We conducted interviews and usability tests based on our two proto personas: 
-                    "the help seeker" and "the donor."
+                <p class="text-wrap-600">We conducted interviews and usability tests based on our 
+                    <span class="purpleDark pbold" id="FSCprotos">two proto personas:</span>
+                    "the help seeker" and "the donor." We constructed our proto personas based on our 
+                    client interview and evaluation of the site. 
                 </p>
                 <h4 class="pad-top-5 marg-btm-none">
                     interviews
                 </h4>  
+            </div>
+             <!-- Proto-persona pop up modal! -->
+             <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                <!-- Modal Content (The Image) -->
+                <img class="proto-content" id="img02">
             </div>
             <div class="research-section section-marg-side">
                 <div class="interview-cards">
@@ -141,6 +152,19 @@
                     </p>
                 </div>
             </div>
+            <p class="section-marg-side pad-top-5 sketch-p">
+                From our research we created our user persona, <span class="purpleDark pbold" id="fsc-persona">Sarah Lopez.</span> We decided to focus on 
+                the path of the help seeker because we posited that creating a comforting, welcoming, 
+                trustworthy place for her would naturally engender empathy with a donor persona and 
+                drive them to contribute.
+            </p>
+             <!-- Proto-persona pop up modal! -->
+            <div id="myModalFSC" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                <!-- Modal Content (The Image) -->
+                <img class="proto-content" id="img04">
+            </div>
             <div class="section-marg-side">
                 <h3 class="pad-top-2">
                     information architecture.
@@ -149,7 +173,7 @@
                     card sorting
                 </h4> 
                 <p>We ran an online card sorting exercise on six users. 
-                    The users confirmed our initial label ideas and put all cards into four categories: 
+                   The users confirmed our initial label ideas and put all cards into four categories: 
                 </p>
                 <div class="fsc-nav-labels">
                     <p class="fsc-nav-label pbold">
@@ -180,9 +204,10 @@
                     <p id="sitemap-results1" class="purpleDark">
                         reduction in menu options
                     </p>
-                    <p class="text-wrap text-center">
-                        We implemented some of the labels suggested by users to give an empathetic 
-                        feel (e.g. How We Help, Who We Are) 
+                    <p class="text-wrap-600">
+                        By combinging similar subjects and moving the "escape" button into a global, highly noticable location, 
+                        we were able to organize and streamline the navigation. The team spent a long time debating label names, 
+                        and <span class="purpleDark pbold">ultimately implemented some of the labels suggested by users to give an empathetic feel (e.g. How We Help, Who We Are).</span>
                     </p>
                 </div>
             </div>
